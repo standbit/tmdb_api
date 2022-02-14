@@ -6,6 +6,6 @@ if __name__ == '__main__':
     if not user_api_key:
         print('Invalid api key')
         raise SystemExit
-    movie_number = 215
+    movie_number = 33
     print(make_tmdb_api_request(method='/movie/%d' % movie_number, api_key=user_api_key)['budget'])
 
